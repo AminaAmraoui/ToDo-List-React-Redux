@@ -1,3 +1,5 @@
+![alt text](https://github.com/AminaAmraoui/ToDo-List-React-Redux/blob/master/ToDo.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
