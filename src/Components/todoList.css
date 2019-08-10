@@ -1,0 +1,15 @@
+.table-container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 50px
+}
+
+.fas{
+    color: "blue";
+    font-size: "20pt"
+}
+
+.fa-minus-circle{
+    margin-right: 5px
+}

@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ToDo from './Components/todo'
+import ToDoList from './Components/todoList'
+import store from './Store/store'
+import { Provider } from 'react-redux'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Provider store={store}>
+    <div className="div-container">
+      <div className="card text-center">
+        <div className="card-header">
+          ToDo List
+        </div>
+        <div className="card-body">
+        <p className="card-text">You can add, remove and mark as completed ToDo items.</p>
+        </div>
+      </div>
+      <div className="todo-container">
+        <ToDo/>
+        <ToDoList/>
+      </div>
     </div>
+    </Provider>
   );
 }
 
